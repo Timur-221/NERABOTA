@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="90c5180ce58c42a1b93f913eb5386327" Name="Diagram1">
+        <EntityTypeShape EntityType="NERABOTAModel.Account" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.City" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.Company" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.Metro" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.Rabotadatel" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.ResumeAc" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.Soiskatel" Width="1.5" PointX="6" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NERABOTAModel.Work" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="NERABOTAModel.FK_Rabotadatel_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Soiskatel_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Rabotadatel_City" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Soiskatel_City" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Work_City" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Rabotadatel_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Work_Metro" ManuallyRouted="false" />
+        <AssociationConnector Association="NERABOTAModel.FK_Rabotadatel_Work" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

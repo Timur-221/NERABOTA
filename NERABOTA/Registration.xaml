@@ -1,0 +1,52 @@
+﻿<Window x:Class="NERABOTA.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NERABOTA"
+        mc:Ignorable="d"
+        Title="Registration" Height="550" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Icon="/logo.png">
+    <Grid Background="#FFAAAAAA">
+        <Grid Name="Toolbar" VerticalAlignment="Top" Height="25" Background="#ff960000" MouseDown="Toolbar_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Name="MinButton" Height="23" Width="23" Margin="0 0 4 0" MouseDown="MinButton_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Source/min_butt.png"/>
+                        </Style>
+                    </Image.Style>
+                </Image>
+                <Image Name="ExitButton" Height="23" Width="23" Margin="0 0 3 0" MouseDown="ExitButton_MouseDown">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="Source/exit_butt.png"/>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </StackPanel>
+        </Grid>
+
+
+        <Label Content="NERABOTA" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 30 0 0" Foreground="#FF960000" FontSize="50"/>
+        <Grid Height="400" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 100 0 0">
+            <Rectangle VerticalAlignment="Top" HorizontalAlignment="Center" Fill="#FF960000" Height="380" Width="300" Margin="0,-13,0,0"/>
+            <Label Content="АВТОРИЗАЦИЯ" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25"/>
+            <Label Content="Логин" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Margin="43,48,0,0" RenderTransformOrigin="0.439,0.51"/>
+            <TextBox x:Name="RegLogin" FontSize="18" Width="220" Height="30" Background="White" Margin="43,79,37,291"/>
+            <Label Content="Пароль" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Margin="38,109,0,0"/>
+            <PasswordBox x:Name="RegPass" FontSize="18" Width="220" Height="30" Background="White" Margin="43,145,37,225"/>
+            <Label Content="Повторите пароль" Foreground="White" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="38,175,0,0"/>
+            <PasswordBox x:Name="RegPass2" FontSize="18" Width="220" Height="30" Background="White" Margin="43,206,37,164"/>
+            <Label Content="Кто вы?" Foreground="White" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,236,0,0"/>
+            <ComboBox x:Name="cb1" Width="220" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="43,267,0,0">
+                <TextBlock Foreground="Black" FontSize="16" Text="Соискатель"/>
+                <TextBlock Foreground="Black" FontSize="16" Text="Работадатель"/>
+            </ComboBox>
+
+            <Button Click="Button_Click" Content="ЗАРЕГИСТРИРОВАТЬСЯ" Foreground="#FF960000" FontSize="18" FontWeight="Bold" Height="40" Width="210" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,314,0,0"/>
+        </Grid>
+
+        <Button Click="Button_Click_1" Height="25" Width="150" Background="#ff960000" Foreground="White" Content="Авторизация" FontSize="14" Margin="0 500 0 0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+    </Grid>
+</Window>
